@@ -1,0 +1,472 @@
+/*base*/
+@font-face {
+	font-family: 'Brandon Grotesque';
+	src: url('../fonts/BrandonGrotesque-Regular.eot');
+	src: url('../fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BrandonGrotesque-Regular.woff') format('woff'),
+		url('../fonts/BrandonGrotesque-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Brandon Grotesque';
+	src: url('../fonts/BrandonGrotesque-Bold.eot');
+	src: url('../fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BrandonGrotesque-Bold.woff') format('woff'),
+		url('../fonts/BrandonGrotesque-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+/*@font-face {
+	font-family: 'Big Caslon';
+	src: url('../fonts/BigCaslon-Medium.eot');
+	src: url('../fonts/BigCaslon-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BigCaslon-Medium.woff') format('woff'),
+		url('../fonts/BigCaslon-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+body{
+    font-family:'Brandon Grotesque',Calibri,sans-serif;
+    background:#fdfdfd;
+    color:#3c3c3c;
+	font-size:14px;
+}
+p,li{
+    font-size:1.2em;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+	/* font-family: 'Libre Baskerville',Cambria,serif; */
+}
+a{
+    color:#F69432;
+    cursor:pointer;
+}
+a:hover,a:focus{
+    color:#F69432;
+}
+hr{
+    border:0;
+    background-image: linear-gradient(to right, transparent, #DBDBDB, transparent);
+    height:1px;
+}
+hr.tall{
+    margin:40px 0;
+}
+.center{
+    text-align:center
+}
+.right{
+    float:right;
+	text-align:right;
+}
+.inbl{
+    display:inline-block;
+}
+.white{
+	color:#fafafa;
+}
+.push-top{
+    margin-top:60px;
+}
+.pd-top{
+    padding-top:25px
+}
+.push-bot{
+    margin-bottom:60px;
+}
+.pd-bot{
+    padding-bottom:25px
+}
+.nomargin{
+    margin:0!important;
+}
+.nopadding{
+    padding:0!important;
+}
+.errore{
+    font-weight:bold;
+    color:red;
+}
+.btn{
+    padding:10px 30px;
+    color:#fdfdfd;
+    background:#F69432;
+    font-size:1em;
+    border-radius:0;
+    border:0;
+	transition: all .2s;
+}
+.btn:hover,.btn:focus{
+    color:#fdfdfd;
+    text-decoration:none;
+    outline:0!important;
+}
+.btn:hover{
+	background:#ffa54c;
+}
+.btn:focus{
+	background:#F69432;
+    box-shadow:inset 0px 0px 10px #984600;
+    -webkit-box-shadow:inset 0px 0px 10px #984600;
+    -moz-box-shadow:inset 0px 0px 10px #984600;
+    -o-box-shadow:inset 0px 0px 10px #984600;
+}
+.btn.lg{
+	font-size:2em;
+}
+.topsez{
+	text-transform:uppercase;
+}
+h1{
+	font-size:2.1em;
+}
+/*MENU*/
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: #E1658E;
+    transition: all .3s;
+    text-align:center;
+}
+.menu ul{
+    padding:0;
+    list-style-type: none;
+    display: inline-block;
+    margin:0;
+}
+.menu ul li{
+    display:inline-block;
+    font-size:1.1em;
+}
+.menu ul li a{
+    display:block;
+    padding:20px;
+    color: #fdfdfd;
+    text-transform: uppercase;
+		cursor:pointer;
+		border-bottom:3px solid transparent;
+		transition: all.3s;
+}
+@media (max-width: 767px){
+.menu ul li{
+    font-size:.7em;
+}
+.menu ul li a{
+    padding:15px 10px;
+}
+}
+.menu ul li a:hover,.menu ul li a.active{
+    text-decoration:none;
+}
+.menu ul li a:focus{
+    outline: 0!important;
+		text-decoration:none;
+}
+.menu ul li a.active{
+		border-color:#fafafa;
+}
+
+.main{
+	text-align:center;
+}
+/*landing*/
+#landing{
+	height:130vh;
+	overflow:hidden
+}
+.toplogo{
+/*	height:17%;
+	max-width:75%;*/
+	padding:30px 10px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.toplogo>.helper{
+	display:inline-block;
+	vertical-align:middle;
+}
+.sld{
+	height:100%;
+}
+#mainowl{
+	height:100%;
+}
+#mainowl div{
+	height:100%;
+	cursor: -webkit-grab;
+}
+.sldbg{
+	background-size:cover;	
+}
+#mainowl div:focus{
+	cursor: -webkit-grabbing;
+}
+
+/*e-shop*/
+#eshop .topsez{
+background: #4DBE85; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4DBE85 , #FEE290); 
+background: linear-gradient(to left, #4DBE85 , #FEE290);  
+}
+
+.fotoprod{
+	padding:20px;
+}
+.prod .link{
+	border-bottom:1px solid #3c3c3c;
+	padding-bottom:15px;
+	transition:all .3s;
+	color:#3c3c3c;
+}
+.prod .link:hover,.prod .link:focus{
+	padding-bottom:3px;
+	color:#3c3c3c;
+	text-decoration:none
+}
+
+/*about*/
+#about .topsez{
+background: #E71F52; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E71F52 , #FED660); 
+background: linear-gradient(to left, #E71F52 , #FED660);  
+}
+
+/*follow*/
+#follow .topsez{
+background: #81C2D6; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #81C2D6 , #FEE290); 
+background: linear-gradient(to left, #81C2D6 , #FEE290);  
+}
+#follow>.container{
+	/*background:#efefef;*/
+}
+
+/*CONTACT*/
+#contact .topsez{
+background: #C5637B; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #C5637B , #CD86BA); 
+background: linear-gradient(to left, #C5637B , #CD86BA);  
+}
+input{
+	width:100%;
+	height:36px;
+	font-size:1.2em;
+	margin-bottom:20px;
+    border:2px solid #ccc;
+    transition:all .3s;
+    padding:2px;
+}
+textarea{
+	width:100%;
+	height:100px;
+	font-size:1.2em;
+	margin-bottom:20px;
+    border:2px solid #ccc;
+    transition:all .3s;
+    padding:2px;
+}
+input:focus,textarea:focus{
+    border:2px solid #E1658E;
+    outline:0 !important;
+    padding:2px;
+}
+.btnform{
+	background:#968D7E;
+	padding:10px;
+	width:100%;
+	font-size:1.3em;
+	transition: all .3s;
+}
+.btnform.ok{
+	cursor:pointer;
+	background:#E1658E;
+}
+/* .btnform.ok:hover{
+	background:#ffa54c;
+} */
+.btnform.done{
+	background:green;
+}
+.btnform.error{
+	background:red;
+}
+/*CONTACT*/
+
+/*FOOTER*/
+footer{
+	background:#E1658E;
+	padding:50px 0;
+}
+footer a,footer a:hover{
+	color:#fafafa;
+}
+
+.social img{
+	display:inline-block;
+	width:50px;
+	margin-right:10px;
+}
+/*FOOTER*/
+
+/*MODAL*/
+.modal-backdrop.in {
+    opacity: .9;
+}
+.modal-backdrop{
+    /*background: #F69432;
+    background: -webkit-linear-gradient(left, #968D7E , #F69432); 
+    background: -o-linear-gradient(right, #968D7E, #F69432); 
+    background: -moz-linear-gradient(right, #968D7E, #F69432); 
+    background: linear-gradient(to right, #968D7E , #F69432); 
+	*/
+	background: #3c3c3c;
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        max-width:1200px;
+        width:100%;
+    }
+    /*#modfoto{
+        border-right:1px solid #fafafa;
+    }*/
+}
+.modal-content{
+    background-color:#ececec;
+    border:0;
+    box-shadow:none;
+}
+
+.modal-title{
+    font-size:2.5em;
+	text-align:right;
+	font-family:'Brandon Grotesque',Calibri,sans-serif;
+}
+.close{
+    color:#fafafa;
+    font-size:3em;
+    opacity:1;
+}
+.close:hover, .close:focus{
+    color:#fafafa;
+    opacity:1;
+    outline:0;
+}
+.altfoto{
+cursor:pointer;
+margin:10px;	
+}
+/*MODAL*/
+
+/*TORNA SU*/
+#totop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background:#444;
+    cursor: pointer;
+    border: 0;
+	font-size:1.5em;
+    text-decoration: none;
+	-webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    opacity: 0;
+	color: #fafafa;
+}
+#totop:hover {
+	color:#E1658E;
+}
+#totop:focus {
+	color:#E1658E;
+}
+#totop.show {
+    opacity: .6;
+}
+/*TORNA SU*/
+
+
+/*INSTAGRAM*/
+@media (min-width: 992px){
+	.instmobinfo{
+		display:none;
+	}
+}
+
+@media (max-width: 991px){
+	.instover{
+		display:none;
+	}
+}
+
+.instapic{
+	box-sizing:border-box;
+	cursor: pointer;
+	position: relative;
+	color: #fafafa;
+	width:24%;
+}
+@media (max-width: 991px){
+	.instapic{
+		width:43%;
+		margin:5px;
+	}
+}
+
+.instmobinfo{
+	background:#E1658E;
+	text-align:left;
+	padding:5px;
+}
+.instmobinfo span{
+float:right;	
+}
+
+.instover{
+	opacity:0;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	background:#E1658E;
+	transition:all .5s;
+	padding:20px 10px;
+	text-align:center;
+}
+
+.zaninstalogo{
+	margin-bottom:10px;
+	padding:0 20px;
+}
+.likecomms{
+	display:inline-block;
+	font-size:1em;
+}
+.likecomms i.fa{
+	font-size:1.7em;
+	margin-bottom:10px;
+}
+.like,.comms{
+	display:inline;
+	margin:0 15px;
+}
+.comms{
+	float:right;
+}
+.like{
+	float:left;
+}
+
+.instapic:hover .instover{
+	opacity:.95;
+}
+/*INSTAGRAM*/

@@ -1,0 +1,54 @@
+body{font-family:calibri,sans-serif;padding:10px;}
+.formin,.articolo{color:#fafafa;background:#F69432;text-align:center;padding:10px 20px;margin:50px;}
+input,select{height:30px;width:40%;color:#F69432;display:inline-block;margin-bottom:20px;}
+input[type="checkbox"]{width:20px;height:16px;margin-left:30px;}
+textarea{width:40%;}
+textarea{margin-bottom:20px;}
+#cke_txt{display:inline-block;margin-bottom:20px;}
+#sbm{padding:10px 30px;color:#fafafa;background:#aaaaaa;display: inline-block;}
+#sbm.sbmok{background:darkgreen;cursor:pointer;}
+.del{padding:10px 30px;color:#fafafa;background:red;display: inline-block;cursor:pointer;}
+
+/*upload*/
+.h1img{
+    margin:10px 0;
+    font-size:5em;
+    color:#F69432;
+}
+[class*="imguploadok"]{
+    display:none;
+    color:green;
+}
+.h1img[class*='imguploadstop']{
+    display:none;
+    color:red;
+}
+.btn-container{
+    width:40%;
+    display: inline-block;
+    background: #fafafa;
+    padding:20px;
+    margin-bottom:20px;
+}
+.btn-container.small{
+    width:20%;
+}
+.btn-container.small label{
+    color:#F69432;
+}
+.btn-container p {
+    color:#F69432;
+}
+[id^='btnup']{padding:10px 30px;color:#fafafa;background:#F69432;display: inline-block;}
+[id^='img']{
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    padding: 10px 5px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -200px;
+    display: inline-block;
+    width: 200px;
+}
+/*upload*/

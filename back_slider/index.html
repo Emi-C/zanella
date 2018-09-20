@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BACK</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+</head>
+<body id="bb" style="display:none">
+<script>
+function login(){
+return prompt("Inserisci Password");
+}
+
+while (pwd!="batmac"){
+	var pwd=login();
+}
+
+if(pwd=="batmac"){
+	document.getElementById("bb").style.display = "block";
+}
+</script>
+<div class="formin">
+    
+    <label id="limg">Immagine</label><br>
+    <!--<input type="file" id="img">-->
+    <div class="btn-container">
+        <!--the three icons: default, ok file (img), error file (not an img)-->
+        <h1 class="h1img imgupload"><i class="fa fa-file-image-o"></i></h1>
+        <h1 class="h1img imguploadok"><i class="fa fa-check"></i></h1>
+        <h1 class="h1img imguploadstop"><i class="fa fa-times"></i></h1>
+        <!--this field changes dinamically displaying the filename we are trying to upload-->
+        <p id="namefile">&nbsp;</p>
+        <!--our custom btn which which stays under the actual one-->
+        <a type="button" id="btnup">Sfoglia immagine...</a>
+        <!--this is the actual file input, is set with opacity=0 beacause we wanna see our custom one-->
+        <input type="file" value="" name="img" id="img">
+        <input type="hidden" value=1 id="imgflag">
+    </div>
+    <br>
+	
+
+    
+    <a id="sbm">inserisci</a>
+</div>
+
+<div id="results">
+
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+<script src="main.js"></script>
+
+</body>
+</html>
